@@ -99,3 +99,53 @@ export const CloseBtn = styled.div`
   z-index: -1;
   cursor: pointer;
 `;
+
+export const EditInput = styled.input`
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 20px;
+`;
+
+export const EditTextarea = styled.textarea`
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+  padding: 20px;
+  resize: none;
+  font-size: 14px;
+`;
+
+export const BtnWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+`;
+
+export const CancelBtn = styled.button`
+  width: 80px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+`;
+
+export const EditBtn = styled.button`
+  width: 80px;
+  height: 40px;
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+`;

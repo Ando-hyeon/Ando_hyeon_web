@@ -17,3 +17,15 @@ export const Addmarker = styled.button<{ disabled: boolean }>`
   z-index: 101;
   cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
 `;
+
+export const Background = styled.div`
+  position: absolute;
+  width: 100vw;
+  min-width: 1000px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 102;
+  `;

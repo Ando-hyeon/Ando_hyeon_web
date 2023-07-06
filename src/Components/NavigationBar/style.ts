@@ -34,3 +34,22 @@ export const EvaluationImg = styled.img`
   height: 40px;
   margin-top: 25px;
 `;
+
+export const SignWrapper = styled.div`
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const SignText = styled.div`
+  font-size: 13px;
+  cursor: pointer;
+`;
+
+export const Line = styled.div`
+  width: 80%;
+  margin: 20px 0;
+  border: 0.5px solid rgba(222, 226, 230, 1);
+`;

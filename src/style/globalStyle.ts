@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -14,6 +14,11 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
+    color: black;
+  }
+
+  input, textarea {
+    outline: none;
   }
 
   button {
