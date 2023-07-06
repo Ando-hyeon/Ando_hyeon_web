@@ -38,7 +38,9 @@ export function MainPage() {
 
   const notFilterAllList = post ? post.response : [];
   const filterAllList = post
-    ? post?.response.filter((x) => cookies.get("email") !== x.writer.email)
+    ? (post?.response || []).filter(
+        (x) => cookies.get("email") !== x.writer.email
+      )
     : [];
   const filterMyList = myPost ? myPost?.response : [];
   const lists = [...filterAllList, ...filterMyList];
