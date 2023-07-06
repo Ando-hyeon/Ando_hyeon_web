@@ -21,9 +21,11 @@ export function NewsListBox({
 }: PropsType) {
   return (
     <_.Container>
-      <_.BigTitleText>{newsList[0]?.address.detailAddress} 관련 뉴스 📰</_.BigTitleText>
+      <_.BigTitleText>
+        {newsList[0]?.address.detailAddress} 관련 뉴스 📰
+      </_.BigTitleText>
       <_.NewsContainer>
-        {newsList.map((item, i) => {
+        {(newsList || []).map((item, i) => {
           const statementSort = [
             {
               name: "부정적",
