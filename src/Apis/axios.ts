@@ -2,7 +2,7 @@ import axios, { AxiosError } from "axios";
 import { Cookies } from "react-cookie";
 
 export const instance = axios.create({
-  baseURL: process.env.REACT_APP_BASE_URL,
+  baseURL: "https://andohyoen.info-dsm.info",
   timeout: 10000,
 });
 
